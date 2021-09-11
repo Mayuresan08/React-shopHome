@@ -68,9 +68,9 @@ function App() {
     const callBackSet=(data,name)=>{
       setCartNo(cartNo + data)
       console.log(name)
-      items.map(a=>{
-        if(name === a.name) 
-        return a.addedToCart = !a.addedToCart
+      items.map((a)=>{
+        if(name === a.name)  return a.addedToCart = !a.addedToCart
+        return a
       })
       console.log(items)
     }
