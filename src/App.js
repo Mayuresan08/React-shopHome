@@ -69,8 +69,8 @@ function App() {
       setCartNo(cartNo + data)
       console.log(name)
       items.map(a=>{
-        if(name === a.name)
-         return a.addedToCart = !a.addedToCart
+        if(name === a.name) 
+        return a.addedToCart = !a.addedToCart
       })
       console.log(items)
     }
